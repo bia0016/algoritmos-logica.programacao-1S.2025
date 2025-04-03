@@ -3,11 +3,12 @@
 int main(int argc, char* argv[]){
     //quadrado.c, area = lado^2
     float area, lado;
+    printf("quadrado.c.\n");
     printf("digite o lado do quadrado: ");
     scanf("%f", &lado);
     area = lado * lado;
 
-    printf("a area do quadrado eh: %.2f", area);
+    printf("a area (A) do quadrado eh: %.2f", area);
     return 0;
 
     /*quadrado.c
