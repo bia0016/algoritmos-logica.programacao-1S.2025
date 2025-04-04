@@ -1,42 +1,54 @@
 #include <stdio.h>
 
 int main(int argc, char* argv[]){
-    char opcao, op;
+    char opcao;
     float n;
-    printf("assistente de filmes.\n");
-    /*1.assistir filmes leves l, assistir filmes intensos i
-    2.leves: animação ou comédia
-    2.intensos: terror ou ação
-    3.terror psicologico ou natural - ação superheroi ou realista 
-    */
+    printf("Assistente de Filmes.\n");
 
-    printf("para assistir filmes leves pressione (L), para assistir filmes intensos pressione (I).\n");
+    printf("Para assistir Filmes Leves pressione (L), para assistir Filmes Intensos pressione (I).\n");
     scanf("%c", &opcao);
     
-    if(opcao == 'l' || opcao == 'i'){
-        printf("assistir filmes leves.\n");
-        printf("assistir filmes intensos.\n");
-        
+    if(opcao == 'l'){
+        printf("Assistir Filmes Leves.\n");
+        scanf("%c", &opcao);
+        printf("Filmes Leves> Para assistir filmes de Animacao pressione (A) ou (C) para assistir filmes de Comedia.\n");
+        scanf("%c", &opcao);
+        if(opcao == 'a'){
+            printf("Filmes Leves> indicacao de Filme de Animacao: TOY STORY.\n");
+        } else if(opcao == 'c'){
+            printf("Filmes Leves> indicacao de Filme de Comedia: TROVAO TROPICAL.\n");
         }
-        
-    printf("filmes leves: animacao (A) ou comedia (C)?\n");
-    scanf("%c", &op);
-    
-   // if(op == a || op == C){
-      //  printf()
-    //}
-   /* switch(op){
-        case'a':
-        printf("animacao: assista toy story.\n");
-        break;
-        case'c':
-        printf("comedia: assista trovao tropical.\n");
-        break;
-        default:
-        printf("opcao invalida.\n");
+    } else if(opcao == 'i'){
+        printf("Assistir Filmes Intensos.\n");
+        scanf("%c", &opcao);
+        printf("Filmes Intensos> Para assistir filmes de Terror pressione (T) ou (S) para filmes de Acao.\n");
+        scanf("%c", &opcao);
+        if(opcao == 't'){
+            printf("Filmes Intensos de Terror.\n");
+            scanf("%c", &opcao);
+            printf("Filmes intensos> Para Terror Psicologico pressione (P), para Terror Natural (N).\n");
+                scanf("%c", &opcao);
+            if(opcao == 'p'){
+                printf("Filmes Intensos de Terror.\n");
+                scanf("%c", &opcao);
+                printf("Filmes Intensos> Terror> indicacao para Filme de Terror Psicologico: CORRA!.\n");
+            }else if(opcao == 'n'){
+                printf("Filmes intensos> Terror> indicacao para Filme de Terror Natural: INVOCACAO DO MAL.\n");
+            }
+        }else if(opcao == 's'){
+            printf("Filmes Intensos de Acao.\n");
+            scanf("%c", &opcao);
+            printf("Filmes Intensos> Para Acao Realista pressione (R), para Acao de Super-Heroi (H).\n");
+            scanf("%c", &opcao);
+            if(opcao == 'r'){
+                printf("Filmes Intensos> Acao> indicacao para Filme de Acao Realista: MAD MAX.\n");
+                
+            }else if(opcao == 'h'){
+            printf("Filmes Intensos> Acao> indicacao para Filme de Acao de Super-Heroi: HOMEM-ARANHA.\n");
+           
+        }
+        }
+   
     }
-    */
-    
     return 0;
 }
-
