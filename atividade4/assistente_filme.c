@@ -2,7 +2,7 @@
 
 int main(int argc, char* argv[]){
     char opcao;
-    float n;
+    
     printf("Assistente de Filmes.\n");
 
     printf("Para assistir Filmes Leves pressione (L), para assistir Filmes Intensos pressione (I).\n");
