@@ -14,7 +14,7 @@ int main(int argc, char* argv[]){
     for(int i = 0; i < alunos; i++){
         printf("A nota do aluno %d eh: %.1f\n", i, notas[i]);
     }
-    
+    printf(" ")
     int alunos_consulta;
     printf("\nDigite o numero do aluno que deseja ver a nota: ");
     scanf("%d", &alunos_consulta);
