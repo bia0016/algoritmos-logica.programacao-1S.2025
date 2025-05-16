@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(int argc, char* argv[]){
     int num, primo = 1;
-    printf("digite um numero: ");
+    printf("digite um numero inteiro: ");
     scanf("%d", &num);
     if(num <= 1){
         primo = 0;
