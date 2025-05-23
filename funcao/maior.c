@@ -6,6 +6,7 @@ if(argc != 4){
         printf("Digite ate 3 argumentos\n", argv[0]);
         return 1;
     }
+           
     int x = atoi(argv[1]);
     int y = atoi(argv[2]);
     int z = atoi(argv[3]);
