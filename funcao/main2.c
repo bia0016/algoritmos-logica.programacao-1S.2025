@@ -12,9 +12,6 @@ void imprimir(aluno a){
 int main(int argc, char* argv[]){
     int n = 5;
     aluno alunos[n];
-    //for
-    for(int i = 0; i < 6; i++){
-        printf("Digite o nome do aluno: \n");
     
         fgets(alunos[i].nome, TAM, stdin);
          printf("Digite a nota do aluno: \n");
