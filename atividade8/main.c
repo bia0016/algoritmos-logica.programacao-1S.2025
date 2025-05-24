@@ -11,8 +11,8 @@ typedef struct ponto{
 
 int main(int argc, char* argv[]){
     ponto coo = {atoi(argv[1]), atoi(argv[2]), atoi(argv[3]), atoi(argv[4])};
-    if(argc < 5){
-        printf("Digite pelo menos 4 argumentos\n");
+    if(argc != 5){
+        printf("Digite 4 argumentos\n");
         return 1;
     }
     float dis = sqrt(pow(coo.xa - coo.xb, 2) + pow(coo.ya - coo.yb, 2));
