@@ -19,12 +19,16 @@ resultado: não sorteado
 #include <conio.h>
 //argv[2], [3], [4]
 int main(int argc, char* argv[]){
-    FILE *abc = fopen(argv[1], "w");
-    if(abc == NULL){
+    if(argc != 5){
+        printf("eh necessario pelo menos 5 argumentos\n");
+        return 1;
+    }
+    FILE *log = fopen(argv[1], "w");
+    if(log == NULL){
         printf("erro ao abrir arquivo\n");
         return 1;
     }
-    fprintf(abc, argv[2])
-    //for(int i = 1; i < 7; i++){}
+    fprintf(log, argv[2])
+    
     return 0;
 }
