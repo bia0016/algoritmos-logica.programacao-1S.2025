@@ -1,1 +1,4 @@
-1
+primeiro numero = 1
+ultimo numero = 6
+valor esperado = 3
+valor sorteado = 4
