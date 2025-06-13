@@ -18,7 +18,7 @@ int main(int argc, char* argv[]){
     int z = atoi(argv[3]);
     int valesp = atoi(argv[4]);
 
-    if(a > z){
+    if(a >= z){
         printf("primeiro argumento deve ser menor que o segundo\n");
         return 1;
     }
