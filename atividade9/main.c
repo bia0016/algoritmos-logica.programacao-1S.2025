@@ -9,7 +9,7 @@ int main(int argc, char* argv[]){
         return 1;
     }
     
-    FILE *log = fopen(argv[1], "w");
+    FILE *log = fopen(argv[1], "a");
     if(log == NULL){
         printf("erro ao abrir arquivo\n");
         return 1;
